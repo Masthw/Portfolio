@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #010103;
+  font-family: "General Sans", sans-serif;
+}
+
+@layer utilities {
+  .c-space {
+    padding-inline: 0.3125rem;
+  }
+  .nav-ul {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 0.25rem;
+    position: relative;
+    z-index: 20;
+  }
+  .nav-li {
+    color: theme("colors.neutral.400");
+    font-family: "General Sans", sans-serif;
+    text-align: start;
+    padding-block: 0.125rem;
+    transition: color 0.2s ease;
+  }
+  .nav-li:hover {
+    color: theme("colors.white");
+    background-color: oklch(0.38 0.01 257.51);
+  }
+  .nav-li-a {
+    font-size: 1.125rem;
+    transition: color 0.2s ease;
+  }
+  .nav-sidebar {
+    position: absolute;
+    inset-inline: 0;
+    background-color: #0e0e10;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 20;
+    margin-inline: auto;
+    display: block;
+  }
+
+  @media (min-width: 40rem) {
+    .c-space {
+      padding-inline: 0.625rem;
+    }
+    .nav-ul {
+      flex-direction: row;
+    }
+    .nav-li:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .nav-li {
+      width: 100%;
+      border-radius: 0.375rem;
+      padding-inline: 1.25rem;
+    }
+    .nav-sidebar {
+      display: none;
+    }
+  }
+  @media (min-width: 48rem) {
+    .nav-ul {
+      gap: 0.375rem;
+    }
+    .nav-li-a {
+      font-size: 1rem;
+    }
+  }
+}
