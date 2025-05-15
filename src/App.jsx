@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
 import NavBar from "./sections/NavBar";
+import Hero from "./sections/Hero";
 
 function App() {
   return (
     <main className="max-w-7xl mx-auto">
       <NavBar />
+      <Hero />
     </main>
   );
 }

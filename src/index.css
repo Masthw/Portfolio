@@ -47,6 +47,26 @@ body {
     margin-inline: auto;
     display: block;
   }
+  .hero-tag {
+    text-align: center;
+    font-size: 1.875rem;
+    font-family: General Sans, sans-serif;
+    font-weight: 900;
+    line-height: 1.5;
+  }
+  .text-gray-gradient {
+    background: linear-gradient(
+      to right,
+      #bec1cf 0%,
+      #bec1cf 60%,
+      #d5d8ea 60%,
+      #d5d8ea 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 
   @media (min-width: 40rem) {
     .c-space {
@@ -66,6 +86,9 @@ body {
     .nav-sidebar {
       display: none;
     }
+    .hero-tag {
+      font-size: 2.25rem;
+    }
   }
   @media (min-width: 48rem) {
     .nav-ul {
@@ -74,5 +97,40 @@ body {
     .nav-li-a {
       font-size: 1rem;
     }
+    .hero-tag {
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 80rem) {
+    .hero-tag {
+      font-size: 3.75rem;
+      line-height: 1;
+    }
+  }
+}
+
+.waving-hand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  40% {
+    transform: rotate(9deg);
   }
 }
