@@ -2,12 +2,14 @@ import React from "react";
 import "./App.css";
 import NavBar from "./sections/NavBar";
 import Hero from "./sections/Hero";
+import About from "./sections/About";
 
 function App() {
   return (
     <main className="max-w-7xl mx-auto">
       <NavBar />
       <Hero />
+      <About />
     </main>
   );
 }
