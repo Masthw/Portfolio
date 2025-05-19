@@ -10,10 +10,11 @@ import ReactLogo from "../components/ReactLogo";
 import Cube from "../components/Cube";
 import Rings from "../components/Rings";
 import HeroCamera from "../components/HeroCamera";
+import Button from "../components/Button";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ query: "(max-width: 440px)" });
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isMobile = useMediaQuery({ query: "(min-width: 441px) and (max-width: 768px)" });
   const isTablet = useMediaQuery({
     query: "(min-width: 768px) and (max-width: 1024px)",
   });
@@ -28,7 +29,7 @@ const Hero = () => {
         <p className="hero-tag text-gray-gradient">Software Developer</p>
       </div>
       <div className="w-full h-full absolute inset-0 ">
-        <Canvas className="w-full h-full border border-red-500 ">
+        <Canvas className="w-full h-full ">
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
             <HeroCamera isMobile={isMobile}>
@@ -48,6 +49,12 @@ const Hero = () => {
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
         </Canvas>
+      </div>
+
+      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+        <a href="#contact" className="w-fit">
+          <Button name="Let's work togheter" isBeam containerClass="sm:w-fit w-full sm:min-w-96"/>
+        </a>
       </div>
     </section>
   );
