@@ -163,10 +163,15 @@ body {
     border-radius: 9999px;
     transition: all 0.2s ease;
   }
-
   .arrow-btn:active {
     transform: scale(0.95);
   }
+  .custom-bg-black-200 {
+  background-color: #0E0E10;
+}
+.custom-border-black-300 {
+  border: 1px solid #1C1C21;
+}
 
   @media (min-width: 40rem) {
     .c-space {

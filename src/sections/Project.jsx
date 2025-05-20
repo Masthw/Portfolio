@@ -1,5 +1,9 @@
+import { Canvas } from "@react-three/fiber";
 import { myProjects } from "../constants";
-import { useState } from "react";
+import { Suspense, useState } from "react";
+import { Center, OrbitControls } from "@react-three/drei";
+import CanvasLoader from "../components/CanvasLoader";
+import DemoComputer from "../components/DemoComputer";
 
 const projectCount = myProjects.length;
 
@@ -78,10 +82,27 @@ const Projects = () => {
               className="arrow-btn arrow-gradient;"
               onClick={() => handleNavigation("next")}
             >
-              <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4"/>
-              
+              <img
+                src="/assets/right-arrow.png"
+                alt="right arrow"
+                className="w-4 h-4"
+              />
             </button>
           </div>
+        </div>
+        <div className="custom-border-black-300 custom-bg-black-200 rounded-lg h-96 md:h-full">
+          <Canvas>
+            <ambientLight intensity={Math.PI} />
+            <directionalLight position={[10, 10, 5]} />
+            <Center>
+              <Suspense fallback={<CanvasLoader />}>
+                <group scale={2} position={[0,-2.5, 0]} rotation={[0, - 0.1, 0]}>
+                  <DemoComputer texture={currentProject.texture} />
+                </group>
+              </Suspense>
+            </Center>
+            <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
+          </Canvas>
         </div>
       </div>
     </section>
