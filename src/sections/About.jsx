@@ -12,7 +12,7 @@ const About = () => {
     }, 2000);
   };
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="about">
        <p className="head-text text-gray-gradient">About</p>
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 mt-12">
         <div className="col-span-1 xl:row-span-3">
