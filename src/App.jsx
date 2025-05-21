@@ -4,6 +4,7 @@ import NavBar from "./sections/NavBar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Project";
+import Contact from "./sections/Contact";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Hero />
       <About />
       <Projects />
+
+      <Contact />
     </main>
   );
 }

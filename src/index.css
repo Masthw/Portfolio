@@ -172,6 +172,59 @@ body {
 .custom-border-black-300 {
   border: 1px solid #1C1C21;
 }
+.shadow-black-200 {
+  box-shadow: 0 25px 50px -12px rgba(28, 28, 33, 0.25);
+}
+.contact-container {
+  max-width: 36rem;
+  position: relative;
+  z-index: 10;
+  padding-inline: 1.25rem;
+  margin-top: 3rem;
+}
+.field-label {
+  font-size: 1.125rem;
+  color: #AFB0B6;
+}
+.text-white-600 {
+  color: #AFB0B6;
+}
+.field-input {
+  width: 100%;
+  background-color: #1C1C21;
+  padding-inline: 1.25rem;
+  padding-block: 0.5rem;
+  min-height: 3.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  color: #E4E4E6;
+  box-shadow: 0 25px 50px -12px rgba(28, 28, 33, 0.25);
+  outline: none;
+
+}
+.field-input::placeholder {
+  color: #62646C;
+}
+.field-btn {
+  display: flex;
+  background-color: #62646C;
+  padding-inline: 1.25rem;
+  padding-block: 0.5rem;
+  min-height: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(28, 28, 33, 0.25);
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+  color: #ffffff;
+  gap: 0.75rem;
+}
+.field-btn-arrow {
+  width: 0.625rem;
+  height: 0.625rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
 
   @media (min-width: 40rem) {
     .c-space {
@@ -200,6 +253,9 @@ body {
     }
     .grid-container {
       padding: 1.75rem;
+    }
+    .contact-container {
+      padding-inline: 2.5rem;
     }
   }
   @media (min-width: 48rem) {
