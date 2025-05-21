@@ -189,6 +189,9 @@ body {
 .text-white-600 {
   color: #AFB0B6;
 }
+.text-white-500 {
+  color: #62646C;
+}
 .field-input {
   width: 100%;
   background-color: #1C1C21;
@@ -225,6 +228,20 @@ body {
   object-fit: contain;
   filter: brightness(0) invert(1);
 }
+.border-black-300 {
+  border-top: 1px solid #1C1C21;
+}
+.social-icon {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  border-radius: calc(infinity * 1px);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0E0E10;
+  background-color: #1C1C21;
+}
+
 
   @media (min-width: 40rem) {
     .c-space {
