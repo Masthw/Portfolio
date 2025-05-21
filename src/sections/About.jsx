@@ -5,7 +5,7 @@ import { useState } from "react";
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
   const handleCopy = () => {
-    navigator.clipboard.writeText("maverick17xd@gmail.com");
+    navigator.clipboard.writeText("matheussoaressdev@gmail.com");
     setHasCopied(true);
     setTimeout(() => {
       setHasCopied(false);
@@ -102,7 +102,7 @@ const About = () => {
                   src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
                   alt="copy"
                 />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray-gradient text-white">maverick17xd@gmail.com</p>
+                <p className="lg:text-2xl md:text-xl font-medium text-gray-gradient text-white">matheussoaressdev@gmail.com</p>
               </div>
             </div>
           </div>
