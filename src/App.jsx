@@ -5,6 +5,7 @@ import About from "./sections/About";
 import Projects from "./sections/Project";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import Experience from "./sections/Experience";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
-
+      <Experience />
       <Contact />
       <Footer />
     </main>
