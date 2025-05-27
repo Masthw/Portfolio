@@ -1,12 +1,16 @@
 import { useState } from "react";
 import { navLinks } from "../constants/index.js";
 
-const NavItems = () => {
+const NavItems = ({ onClick }) => {
   return (
     <ul className="nav-ul">
       {navLinks.map(({ id, href, name }) => (
-        <li key={id} className="nav-li">
-          <a href={href} className="nav-li-a" onClick={() => {}}>
+        <li key={id} className="nav-li cursor-pointer">
+          <a
+            href={href}
+            className="nav-li-a w-full h-full block"
+            onClick={onClick}
+          >
             {name}
           </a>
         </li>
@@ -19,6 +23,10 @@ const NavBar = () => {
 
   const toggleMenu = () => {
     setIsOpen((prevIsOpen) => !prevIsOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -49,7 +57,7 @@ const NavBar = () => {
       </div>
       <div className={`nav-sidebar ${isOpen ? "max-h-screen" : "max-h-0"}`}>
         <nav className="p-5">
-          <NavItems />
+          <NavItems onClick={closeMenu} />
         </nav>
       </div>
     </header>
