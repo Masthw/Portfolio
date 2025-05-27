@@ -1,8 +1,13 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Toast from "../components/Toast";
 
 const Contact = () => {
   const formRef = useRef();
+
+  const [showToast, setShowToast] = useState(false);
+  const [toastType, setToastType] = useState("success");
+  const [toastMessage, setToastMessage] = useState("");
 
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
@@ -10,8 +15,6 @@ const Contact = () => {
     email: "",
     message: "",
   });
-
-  //service_6bme0nh
 
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
@@ -34,12 +37,23 @@ const Contact = () => {
         "fKJEVHC_B7_CtNQC7"
       );
       setLoading(false);
-      alert("Your message has been sent!");
+      setToastType("success");
+      setToastMessage("Your message has been sent successfully!");
+      setShowToast(true);
+      setTimeout(() => {
+        setShowToast(false);
+      }, 3000);
+
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
       setLoading(false);
       console.log(error);
-      alert("Something went wrong.");
+      setToastType("error");
+      setToastMessage("Something went wrong. Please try again.");
+      setShowToast(true);
+      setTimeout(() => {
+        setShowToast(false);
+      }, 3000);
     }
   };
 
@@ -107,6 +121,13 @@ const Contact = () => {
               />
             </button>
           </form>
+          {showToast && (
+            <Toast
+              message={toastMessage}
+              type={toastType}
+              onClose={() => setShowToast(false)}
+            />
+          )}
         </div>
       </div>
     </section>
