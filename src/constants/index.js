@@ -250,26 +250,18 @@ export const workExperiences = [
   {
     id: 1,
     name: "SENAI-RS Institute of Technology and Innovation",
-    pos: "Technical Assistant – Software Developer",
-    duration: "2025 - Present",
-    title:
-      "Currently working as a full-time software developer. Collaborating with internal teams to maintain and build web and mobile applications. Responsible for developing new features, troubleshooting, improving user experience, and contributing to both front-end and back-end solutions using JavaScript, Vue, React, and APIs.",
-    icon: "/assets/senai.jpeg",
-  },
-  {
-    id: 2,
-    name: "SENAI-RS Institute of Technology and Innovation",
     pos: "Software Development Intern",
     duration: "2023 - 2025",
     title:
-      "Focused on front-end development with React, Vue, and Quasar, as well as mobile apps using Flutter (Dart). Built fully responsive web and cross-platform applications. Led several projects independently from planning to deployment. Worked closely with stakeholders in meetings, gathered requirements, and delivered robust technical solutions. Gained experience in API integration, version control, UI/UX best practices, and agile workflows.",
+      "Worked primarily on front-end development using React, Vue, and Quasar, as well as cross-platform mobile applications with Flutter (Dart). Led several projects independently, from planning to deployment. Collaborated directly with clients and stakeholders, gathering requirements and delivering tailored solutions. Adapted quickly to different technologies depending on each project’s needs, ensuring flexibility in choosing the right tools and frameworks. Gained solid experience in API integration, version control, UI/UX design, and agile workflows.",
     icon: "/assets/senai.jpeg",
   },
+
   {
-    id: 3,
+    id: 2,
     name: "Acrilys",
     pos: "Maintenance Assistant",
-    duration: "2021 - 2022",
+    duration: "2021 - 2023",
     title:
       "Performed general building maintenance tasks. Although unrelated to software development, this role strengthened my problem-solving skills, attention to detail, and discipline — soft skills that are crucial in my current work as a developer.",
     icon: "/assets/acrilys_logo.jpeg",
