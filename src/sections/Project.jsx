@@ -63,7 +63,7 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <p className="animatedText">Check Live Site</p>
+              <p className="animatedText">Check Project</p>
               <img src="assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
             </a>
           </div>
@@ -96,7 +96,7 @@ const Projects = () => {
             <directionalLight position={[10, 10, 5]} />
             <Center>
               <Suspense fallback={<CanvasLoader />}>
-                <group scale={2} position={[0,-2.5, 0]} rotation={[0, - 0.1, 0]}>
+                <group scale={2.1} position={[0,-2.5, 0]} rotation={[0, - 0.1, 0]}>
                   <DemoComputer texture={currentProject.texture} />
                 </group>
               </Suspense>

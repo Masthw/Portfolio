@@ -23,13 +23,13 @@ export const navLinks = [
 
 export const myProjects = [
   {
-    title: "Podcastr - AI Podcast Platform",
-    desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+    title: "Photography Portfolio - Jdoes",
+    desc: "A modern and responsive photography portfolio built for a professional photographer. This website highlights high-quality visuals with a clean and minimalistic design, ensuring the focus stays on the work.",
     subdesc:
-      "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-    href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
-    texture: "/textures/project/project1.mp4",
-    logo: "/assets/project-logo1.png",
+      "Developed with React, TypeScript, Vite, and CSS, this portfolio is optimized for fast performance, responsiveness, and smooth user experience.",
+    href: "https://jdoes-galeria.vercel.app/",
+    texture: "/textures/project/projectportfolio.mp4",
+    logo: "/assets/camera.png",
     logoStyle: {
       backgroundColor: "#2A1816",
       border: "0.2px solid #36201D",
@@ -44,8 +44,8 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        name: "Vercel",
+        path: "assets/vercel.svg",
       },
       {
         id: 3,
@@ -54,19 +54,19 @@ export const myProjects = [
       },
       {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Vite",
+        path: "/vite.svg",
       },
     ],
   },
   {
-    title: "LiveDoc - Real-Time Google Docs Clone",
-    desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
-    subdesc:
-      "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
-    href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
-    texture: "/textures/project/project2.mp4",
-    logo: "/assets/project-logo2.png",
+    title: "3D D20 Dice Roller",
+    desc: "An interactive 3D D20 dice roller built with Three.js. It features realistic physics-based rolling, with special highlights for critical success (20) and critical failure (1).",
+  subdesc:
+    "Developed using pure HTML, CSS, and Three.js, this project simulates a fully 3D dice roll, allowing users to roll the dice and visually see the result with dynamic lighting and animations.",
+    href: "https://masthw.github.io/d20-Dice-Three.js/",
+    texture: "/textures/project/projectdice.mp4",
+    logo: "/assets/dice.png",
     logoStyle: {
       backgroundColor: "#13202F",
       border: "0.2px solid #17293E",
@@ -76,38 +76,33 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
+        name: "HTML",
+        path: "/assets/html.svg",
       },
       {
         id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        name: "Github",
+        path: "assets/github.svg",
       },
       {
         id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Three.js",
+        path: "/assets/Three.js.svg",
       },
     ],
   },
   {
-    title: "CarePulse - Health Management System",
-    desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
-    subdesc:
-      "With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
-    href: "https://www.youtube.com/watch?v=lEflo_sc82g",
-    texture: "/textures/project/project3.mp4",
-    logo: "/assets/project-logo3.png",
+   title: "OrgChart Planner - Organizational Design Tool",
+    desc: "A powerful tool to design, manage, and forecast organizational structures. It allows companies to simulate team changes, new hires, department restructuring, and role shifts with an intuitive drag-and-drop interface.",
+  subdesc:
+    "Built with Vue.js, and Quasar Framework, this platform empowers HR teams and managers to visualize organizational scenarios, plan workforce changes, and optimize company structures efficiently.",
+    href: "https://github.com/Masthw/DynamicOrgChart",
+    texture: "/textures/project/projectorg.mp4",
+    logo: "/assets/orgchart.png",
     logoStyle: {
-      backgroundColor: "#60f5a1",
+      backgroundColor: "#d1edd4",
       background:
-        "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+        "linear-gradient(0deg, #d1edd4, #d1edd4), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
       border: "0.2px solid rgba(208, 213, 221, 1)",
       boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
     },
@@ -115,23 +110,18 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
+        name: "Vue.js",
+        path: "/assets/vue.svg",
       },
       {
         id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        name: "Quasar",
+        path: "assets/quasar.svg",
       },
       {
         id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Scss",
+        path: "/assets/scss.svg",
       },
     ],
   },
