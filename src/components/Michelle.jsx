@@ -21,7 +21,7 @@ const Michelle = (props) => {
   const [currentAction, setCurrentAction] = useState(null);
   const [step, setStep] = useState(0);
 
-  const playAction = (name, fadeDuration = 0.5) => {
+  const playAction = (name, fadeDuration = 1) => {
     if (!actions[name]) {
       console.warn(`Action ${name} not found`);
       return;
@@ -32,9 +32,7 @@ const Michelle = (props) => {
       actions[currentAction].fadeOut(fadeDuration);
     }
 
-
     actions[name].reset().fadeIn(fadeDuration).play();
-
     setCurrentAction(name);
   };
 
@@ -45,14 +43,14 @@ const Michelle = (props) => {
 
     const runSequence = () => {
       const nextAction = sequence[step % sequence.length];
-
       playAction(nextAction);
 
       const duration = actions[nextAction]?._clip?.duration || 3;
+      const extraHold = nextAction === "music" ? 5 : 0;
 
       timeoutId = setTimeout(() => {
         setStep((prev) => prev + 1);
-      }, (duration + 0.5) * 1000);
+      }, (duration + extraHold + 0.5) * 1000);
     };
 
     runSequence();
@@ -65,7 +63,7 @@ const Michelle = (props) => {
       <group name="Scene">
         <group
           name="Armature"
-          rotation={[Math.PI / 2, 0, 0]}
+          rotation={[Math.PI / 1.8, 0, 0]}
           position={[0, -3.5, 0]}
           scale={0.0355}
         >
