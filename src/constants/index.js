@@ -23,6 +23,48 @@ export const navLinks = [
 
 export const myProjects = [
   {
+    title: "Apple Store Clone",
+    desc: "Apple Store Clone is a high-fidelity replica of the official Apple website, focused on delivering smooth visuals, interactive experiences, and a premium user interface. It features seamless animations, 3D models, and a fully responsive design.",
+    subdesc:
+      "Built with React.js, Vite, GSAP for animations, and Three.js for 3D elements. Styled with TailwindCSS and deployed on Vercel, the project ensures blazing-fast performance and an optimized user experience.",
+    href: "https://apple-store-azure-gamma.vercel.app/",
+    texture: "/textures/project/projectapple.mp4",
+    logo: "/assets/apple.svg",
+    logoStyle: {
+      backgroundColor: "#0E1F38",
+      border: "0.2px solid #0E2D58",
+      boxShadow: "0px 0px 60px 0px #2F67B64D",
+    },
+    spotlight: "/assets/spotlight2.png",
+    tags: [
+      {
+        id: 1,
+        name: "React.js",
+        path: "/assets/react.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "/assets/tailwindcss.png",
+      },
+      {
+        id: 3,
+        name: "GSAP",
+        path: "/assets/gsap.svg",
+      },
+      {
+        id: 4,
+        name: "Three.js",
+        path: "/assets/Three.js.svg",
+      },
+      {
+        id: 5,
+        name: "Vite",
+        path: "/vite.svg",
+      },
+    ],
+  },
+  {
     title: "Photography Portfolio - Jdoes",
     desc: "A modern and responsive photography portfolio built for a professional photographer. This website highlights high-quality visuals with a clean and minimalistic design, ensuring the focus stays on the work.",
     subdesc:
@@ -62,8 +104,8 @@ export const myProjects = [
   {
     title: "3D D20 Dice Roller",
     desc: "An interactive 3D D20 dice roller built with Three.js. It features realistic physics-based rolling, with special highlights for critical success (20) and critical failure (1).",
-  subdesc:
-    "Developed using pure HTML, CSS, and Three.js, this project simulates a fully 3D dice roll, allowing users to roll the dice and visually see the result with dynamic lighting and animations.",
+    subdesc:
+      "Developed using pure HTML, CSS, and Three.js, this project simulates a fully 3D dice roll, allowing users to roll the dice and visually see the result with dynamic lighting and animations.",
     href: "https://masthw.github.io/d20-Dice-Three.js/",
     texture: "/textures/project/projectdice.mp4",
     logo: "/assets/dice.png",
@@ -92,10 +134,10 @@ export const myProjects = [
     ],
   },
   {
-   title: "OrgChart Planner - Organizational Design Tool",
+    title: "OrgChart Planner - Organizational Design Tool",
     desc: "A powerful tool to design, manage, and forecast organizational structures. It allows companies to simulate team changes, new hires, department restructuring, and role shifts with an intuitive drag-and-drop interface.",
-  subdesc:
-    "Built with Vue.js, and Quasar Framework, this platform empowers HR teams and managers to visualize organizational scenarios, plan workforce changes, and optimize company structures efficiently.",
+    subdesc:
+      "Built with Vue.js, and Quasar Framework, this platform empowers HR teams and managers to visualize organizational scenarios, plan workforce changes, and optimize company structures efficiently.",
     href: "https://github.com/Masthw/DynamicOrgChart",
     texture: "/textures/project/projectorg.mp4",
     logo: "/assets/orgchart.png",
@@ -122,80 +164,6 @@ export const myProjects = [
         id: 3,
         name: "Scss",
         path: "/assets/scss.svg",
-      },
-    ],
-  },
-  {
-    title: "Horizon - Online Banking Platform",
-    desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
-    subdesc:
-      "Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
-    href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
-    texture: "/textures/project/project4.mp4",
-    logo: "/assets/project-logo4.png",
-    logoStyle: {
-      backgroundColor: "#0E1F38",
-      border: "0.2px solid #0E2D58",
-      boxShadow: "0px 0px 60px 0px #2F67B64D",
-    },
-    spotlight: "/assets/spotlight4.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
-    ],
-  },
-  {
-    title: "Imaginify - AI Photo Manipulation App",
-    desc: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
-    subdesc:
-      "Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
-    href: "https://www.youtube.com/watch?v=Ahwoks_dawU",
-    texture: "/textures/project/project5.mp4",
-    logo: "/assets/project-logo5.png",
-    logoStyle: {
-      backgroundColor: "#1C1A43",
-      border: "0.2px solid #252262",
-      boxShadow: "0px 0px 60px 0px #635BFF4D",
-    },
-    spotlight: "/assets/spotlight5.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
       },
     ],
   },
