@@ -4,10 +4,12 @@ import { Suspense, useState } from "react";
 import { Center, OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader";
 import DemoComputer from "../components/DemoComputer";
+import { useTranslation } from "react-i18next";
 
 const projectCount = myProjects.length;
 
 const Projects = () => {
+  const { t } = useTranslation();
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
 
   const currentProject = myProjects[selectedProjectIndex];
@@ -23,7 +25,7 @@ const Projects = () => {
   };
   return (
     <section className="c-space my-20" id="work">
-      <p className="head-text text-gray-gradient">My work</p>
+      <p className="head-text text-gray-gradient">{t("work_title")}</p>
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
           <div className="absolute top-0 right-0">
@@ -44,9 +46,9 @@ const Projects = () => {
             />
           </div>
           <div className="flex flex-col gap-5 text-white-600 my-5">
-            <p className="text-white font-semibold">{currentProject.title}</p>
-            <p className="animatedText">{currentProject.desc}</p>
-            <p className="  animatedText">{currentProject.subdesc}</p>
+            <p className="text-white font-semibold">{t(`projects.${selectedProjectIndex}.title`)}</p>
+            <p className="animatedText"> {t(`projects.${selectedProjectIndex}.desc`)}</p>
+            <p className="  animatedText">{t(`projects.${selectedProjectIndex}.subdesc`)}</p>
           </div>
           <div className="flex items-center justify-between flex-wrap gap-5">
             <div className="flex items-center gap-3">
@@ -63,7 +65,7 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <p className="animatedText">Check Project</p>
+              <p className="animatedText">{t("check_project")}</p>
               <img src="assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
             </a>
           </div>

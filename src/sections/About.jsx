@@ -1,8 +1,10 @@
 import Globe from "react-globe.gl";
 import Button from "../components/Button";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   const [hasCopied, setHasCopied] = useState(false);
   const handleCopy = () => {
     navigator.clipboard.writeText("matheussoaressdev@gmail.com");
@@ -13,7 +15,7 @@ const About = () => {
   };
   return (
     <section className="c-space my-20" id="about">
-      <p className="head-text text-gray-gradient">About</p>
+      <p className="head-text text-gray-gradient">{t("about.title")}</p>
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 mt-12">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
@@ -23,14 +25,8 @@ const About = () => {
               className="w-full h-auto object-contain"
             />
             <div>
-              <p className="grid-headtext">Hi, I'm Matheus</p>
-              <p className="grid-subtext">
-                I'm a frontend developer with 2 years of experience. While my
-                primary focus is building modern, responsive web applications,
-                I'm also passionate about creative technologies like 3D web
-                development, which I'm continuously exploring and incorporating
-                into my work.
-              </p>
+              <p className="grid-headtext">{t("about.greeting")}</p>
+              <p className="grid-subtext">{t("about.description")}</p>
             </div>
           </div>
         </div>
@@ -42,12 +38,8 @@ const About = () => {
               className="w-full h-fit object-contain"
             />
             <div>
-              <p className="grid-headtext">Tech Stack</p>
-              <p className="grid-subtext">
-                I specialize in frontend development using JavaScript and
-                TypeScript, with a focus on React, React Native, Vue.js and Next.js. I
-                also build cross-platform apps with Flutter.
-              </p>
+              <p className="grid-headtext">{t("about.techstack_title")}</p>
+              <p className="grid-subtext">{t("about.techstack_description")}</p>
             </div>
           </div>
         </div>
@@ -66,13 +58,15 @@ const About = () => {
               />
             </div>
             <div>
-              <p className="grid-headtext">
-                I work remotely across most timezones.
-              </p>
-              <p className="grid-subtext">
-                I'm based in Brazil, with remote work available.
-              </p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <p className="grid-headtext">{t("about.remote_title")}</p>
+              <p className="grid-subtext">{t("about.remote_description")}</p>
+              <a href="#contact">
+                <Button
+                  name={t("about.contact")}
+                  isBeam
+                  containerClass="w-full mt-10"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -84,11 +78,8 @@ const About = () => {
               className="w-full sm:h-[266px] h-fit object-contain"
             />
             <div>
-            <p className="grid-headtext">My Passion for Coding</p>
-<p className="grid-subtext">
-  I’m passionate about solving real-world problems and creating meaningful digital experiences. For me, coding is more than a career — it’s what I truly enjoy doing.
-</p>
-
+              <p className="grid-headtext">{t("about.passion_title")}</p>
+              <p className="grid-subtext">{t("about.passion_description")}</p>
             </div>
           </div>
         </div>
@@ -100,14 +91,14 @@ const About = () => {
               className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
             />
             <div className="space-y-2">
-              <p className="grid-subtext text-center">Contact Me</p>
+              <p className="grid-subtext text-center">{t("about.contact")}</p>
               <div className="copy-container" onClick={handleCopy}>
                 <img
                   src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
                   alt="copy"
                 />
                 <p className="lg:text-1xl md:text-xl font-medium text-gray-gradient text-white">
-                  matheussoaressdev@gmail.com
+                  {t("about.email")}
                 </p>
               </div>
             </div>

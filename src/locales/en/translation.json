@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "greeting": "Hello, I'm Matheus",
+    "role": "Software Developer",
+    "button": "Let's work together"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About",
+    "greeting": "Hi, I'm Matheus",
+    "description": "I'm a frontend developer with 2 years of experience. While my primary focus is building modern, responsive web applications, I'm also passionate about creative technologies like 3D web development, which I'm continuously exploring and incorporating into my work.",
+    "techstack_title": "Tech Stack",
+    "techstack_description": "I specialize in frontend development using JavaScript and TypeScript, with a focus on React, React Native, Vue.js and Next.js. I also build cross-platform apps with Flutter.",
+    "remote_title": "I work remotely across most timezones.",
+    "remote_description": "I'm based in Brazil, with remote work available.",
+    "passion_title": "My Passion for Coding",
+    "passion_description": "I’m passionate about solving real-world problems and creating meaningful digital experiences. For me, coding is more than a career — it’s what I truly enjoy doing.",
+    "contact": "Contact Me",
+    "email": "matheussoaressdev@gmail.com",
+    "copy_success": "Copied!"
+  },
+
+  "work_title": "My Work",
+  "check_project": "Check Project",
+  "projects": [
+    {
+      "title": "Apple Store Clone",
+      "desc": "Apple Store Clone is a high-fidelity replica of the official Apple website, focused on delivering smooth visuals, interactive experiences, and a premium user interface. It features seamless animations, 3D models, and a fully responsive design.",
+      "subdesc": "Built with React.js, Vite, GSAP for animations, and Three.js for 3D elements. Styled with TailwindCSS and deployed on Vercel, the project ensures blazing-fast performance and an optimized user experience."
+    },
+    {
+      "title": "Photography Portfolio - Jdoes",
+      "desc": "A modern and responsive photography portfolio built for a professional photographer. This website highlights high-quality visuals with a clean and minimalistic design, ensuring the focus stays on the work.",
+      "subdesc": "Developed with React, TypeScript, Vite, and CSS, this portfolio is optimized for fast performance, responsiveness, and smooth user experience."
+    },
+    {
+      "title": "3D D20 Dice Roller",
+      "desc": "An interactive 3D D20 dice roller built with Three.js. It features realistic physics-based rolling, with special highlights for critical success (20) and critical failure (1).",
+      "subdesc": "Developed using pure HTML, CSS, and Three.js, this project simulates a fully 3D dice roll, allowing users to roll the dice and visually see the result with dynamic lighting and animations."
+    },
+    {
+      "title": "OrgChart Planner - Organizational Design Tool",
+      "desc": "A powerful tool to design, manage, and forecast organizational structures. It allows companies to simulate team changes, new hires, department restructuring, and role shifts with an intuitive drag-and-drop interface.",
+      "subdesc": "Built with Vue.js, Quasar Framework and Html, this platform empowers HR teams and managers to visualize organizational scenarios, plan workforce changes, and optimize company structures efficiently."
+    }
+  ],
+
+  "experience": {
+    "title": "My Work Experience",
+    "experiences": [
+      {
+        "id": 1,
+        "name": "SENAI-RS Institute of Technology and Innovation",
+        "pos": "Software Development Intern",
+        "duration": "2023 - 2025",
+        "description": "Worked primarily on front-end development using React, Vue, and Quasar, as well as cross-platform mobile applications with Flutter (Dart). Led several projects independently, from planning to deployment. Collaborated directly with clients and stakeholders, gathering requirements and delivering tailored solutions. Adapted quickly to different technologies depending on each project’s needs, ensuring flexibility in choosing the right tools and frameworks. Gained solid experience in API integration, version control, UI/UX design, and agile workflows."
+      },
+      {
+        "id": 2,
+        "name": "Acrilys",
+        "pos": "Maintenance Assistant",
+        "duration": "2021 - 2023",
+        "description": "Performed general building maintenance tasks. Although unrelated to software development, this role strengthened my problem-solving skills, attention to detail, and discipline — soft skills that are crucial in my current work as a developer."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's talk",
+    "description": "Whether you're looking to build a new website, improve your existing platform, or bring a unique project to life, I'm here to help.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Matheus Soares",
+    "emailLabel": "Email",
+    "emailPlaceholder": "matheussoaressdev@gmail.com",
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "Hi, I wanna give you a job...",
+    "sendButton": "Send Message",
+    "sendingButton": "Sending...",
+    "success": "Your message has been sent successfully!",
+    "error": "Something went wrong. Please try again."
+  },
+   "footer": {
+    "terms": "Term & Conditions",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved"
+  }
+}

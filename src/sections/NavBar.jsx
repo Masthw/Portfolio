@@ -1,7 +1,11 @@
 import { useState } from "react";
 import { navLinks } from "../constants/index.js";
+import { useTranslation } from 'react-i18next';
+
+
 
 const NavItems = ({ onClick }) => {
+   const { t } = useTranslation();
   return (
     <ul className="nav-ul">
       {navLinks.map(({ id, href, name }) => (
@@ -11,7 +15,7 @@ const NavItems = ({ onClick }) => {
             className="nav-li-a w-full h-full block"
             onClick={onClick}
           >
-            {name}
+            {t(`nav.${name}`)}
           </a>
         </li>
       ))}
@@ -20,6 +24,7 @@ const NavItems = ({ onClick }) => {
 };
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { i18n } = useTranslation();
 
   const toggleMenu = () => {
     setIsOpen((prevIsOpen) => !prevIsOpen);
@@ -27,6 +32,10 @@ const NavBar = () => {
 
   const closeMenu = () => {
     setIsOpen(false);
+  };
+
+   const handleChangeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
   };
 
   return (
@@ -39,17 +48,37 @@ const NavBar = () => {
           >
             Matheus
           </a>
-          <button
-            onClick={toggleMenu}
-            className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
-            aria-label="Toggle menu"
-          >
-            <img
-              src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
-              alt="toggle"
-              className="w-6 h-6"
-            />
-          </button>
+           <div className="flex items-center gap-3">
+            <button
+              onClick={() => handleChangeLanguage("pt")}
+              className={`hover:text-white ${
+                i18n.language === "pt" ? "text-white" : "text-neutral-400"
+              }`}
+            >
+              🇧🇷
+            </button>
+            <button
+              onClick={() => handleChangeLanguage("en")}
+              className={`hover:text-white ${
+                i18n.language === "en" ? "text-white" : "text-neutral-400"
+              }`}
+            >
+              🇺🇸
+            </button>
+
+             <button
+              onClick={toggleMenu}
+              className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
+              aria-label="Toggle menu"
+            >
+              <img
+                src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
+                alt="toggle"
+                className="w-6 h-6"
+              />
+            </button>
+          </div>
+
           <nav className="sm:flex hidden">
             <NavItems />
           </nav>

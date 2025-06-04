@@ -1,28 +1,30 @@
 export const navLinks = [
   {
     id: 1,
-    name: "Home",
+    name: "home",
     href: "#home",
   },
   {
     id: 2,
-    name: "About",
+    name: "about",
     href: "#about",
   },
   {
     id: 3,
-    name: "Work",
+    name: "work",
     href: "#work",
   },
   {
     id: 4,
-    name: "Contact",
+    name: "contact",
     href: "#contact",
   },
 ];
 
 export const myProjects = [
   {
+    id: 1,
+    key: "apple",
     title: "Apple Store Clone",
     desc: "Apple Store Clone is a high-fidelity replica of the official Apple website, focused on delivering smooth visuals, interactive experiences, and a premium user interface. It features seamless animations, 3D models, and a fully responsive design.",
     subdesc:
@@ -65,6 +67,8 @@ export const myProjects = [
     ],
   },
   {
+    id: 2,
+    key: "jdoes",
     title: "Photography Portfolio - Jdoes",
     desc: "A modern and responsive photography portfolio built for a professional photographer. This website highlights high-quality visuals with a clean and minimalistic design, ensuring the focus stays on the work.",
     subdesc:
@@ -102,6 +106,8 @@ export const myProjects = [
     ],
   },
   {
+    id: 3,
+    key: "dice",
     title: "3D D20 Dice Roller",
     desc: "An interactive 3D D20 dice roller built with Three.js. It features realistic physics-based rolling, with special highlights for critical success (20) and critical failure (1).",
     subdesc:
@@ -134,6 +140,8 @@ export const myProjects = [
     ],
   },
   {
+    id: 4,
+    key: "orgchart",
     title: "OrgChart Planner - Organizational Design Tool",
     desc: "A powerful tool to design, manage, and forecast organizational structures. It allows companies to simulate team changes, new hires, department restructuring, and role shifts with an intuitive drag-and-drop interface.",
     subdesc:
@@ -164,6 +172,11 @@ export const myProjects = [
         id: 3,
         name: "Scss",
         path: "/assets/scss.svg",
+      },
+      {
+        id: 4,
+        name: "HTML",
+        path: "/assets/html.svg",
       },
     ],
   },
@@ -203,25 +216,3 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
       : [-14, -13, -10],
   };
 };
-
-export const workExperiences = [
-  {
-    id: 1,
-    name: "SENAI-RS Institute of Technology and Innovation",
-    pos: "Software Development Intern",
-    duration: "2023 - 2025",
-    title:
-      "Worked primarily on front-end development using React, Vue, and Quasar, as well as cross-platform mobile applications with Flutter (Dart). Led several projects independently, from planning to deployment. Collaborated directly with clients and stakeholders, gathering requirements and delivering tailored solutions. Adapted quickly to different technologies depending on each project’s needs, ensuring flexibility in choosing the right tools and frameworks. Gained solid experience in API integration, version control, UI/UX design, and agile workflows.",
-    icon: "/assets/senai.jpeg",
-  },
-
-  {
-    id: 2,
-    name: "Acrilys",
-    pos: "Maintenance Assistant",
-    duration: "2021 - 2023",
-    title:
-      "Performed general building maintenance tasks. Although unrelated to software development, this role strengthened my problem-solving skills, attention to detail, and discipline — soft skills that are crucial in my current work as a developer.",
-    icon: "/assets/acrilys_logo.jpeg",
-  },
-];

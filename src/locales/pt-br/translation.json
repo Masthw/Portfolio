@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "greeting": "Olá, sou o Matheus",
+    "role": "Desenvolvedor de Software",
+    "button": "Vamos trabalhar juntos"
+  },
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "work": "Trabalho",
+    "contact": "Contato"
+  },
+  "about": {
+    "title": "Sobre",
+    "greeting": "Olá, sou o Matheus",
+    "description": "Sou desenvolvedor frontend com 2 anos de experiência. Meu foco principal é construir aplicações web modernas e responsivas, também sou apaixonado em explorar tecnologias criativas como desenvolvimento web 3D, ao qual estou constantemente explorando e incorporando ao meu trabalho. ",
+    "techstack_title": "Tecnologias",
+    "techstack_description": "Sou especializado em desenvolvimento frontend utilizando JavaScript e TypeScript, com foco em React, React Native, Vue.js e Next.js. Também desenvolvo apps com Flutter.",
+    "remote_title": "Trabalho remotamente na maioria dos fusos horários.",
+    "remote_description": "Estou localizado no Brasil, com disponibilidade para trabalho remoto.",
+    "passion_title": "Minha paixão por programar",
+    "passion_description": "Sou apaixonado por resolver problemas reais e criar experiências digitais significativas. Para mim, programar é mais que uma carreira — é algo que realmente amo fazer.",
+    "contact": "Entre em contato",
+    "email": "matheussoaressdev@gmail.com",
+    "copy_success": "Copiado!"
+  },
+
+  "work_title": "Meus Projetos",
+  "check_project": "Ver Projeto",
+  "projects": [
+    {
+      "title": "Clone da Apple Store",
+      "desc": "O Clone da Apple Store é uma réplica de alta fidelidade do site oficial da Apple, focado em oferecer visuais suaves, experiências interativas e uma interface premium.",
+      "subdesc": "Desenvolvido com React.js, Vite, GSAP para animações e Three.js para elementos 3D. Estilizado com TailwindCSS e hospedado na Vercel, garante alta performance e ótima experiência do usuário."
+    },
+    {
+      "title": "Portfólio Fotográfico - Jdoes",
+      "desc": "Portfólio fotográfico moderno, responsivo e minimalista, desenvolvido para um fotógrafo profissional. Foco total nas imagens e na experiência visual.",
+      "subdesc": "Criado com React, TypeScript, Vite e CSS. Otimizado para alta performance, responsividade e navegação fluida."
+    },
+    {
+      "title": "Rolador de Dado 3D D20",
+      "desc": "Um rolador de dado D20 em 3D com rolagem realista e destaques para sucesso crítico (20) e falha crítica (1).",
+      "subdesc": "Desenvolvido com HTML, CSS e Three.js. Simula uma rolagem realista, com iluminação dinâmica e animações imersivas."
+    },
+    {
+      "title": "OrgChart Planner - Ferramenta de Design Organizacional",
+      "desc": "Ferramenta para planejar, gerir e simular estruturas organizacionais de empresas, com interface de arrastar e soltar.",
+      "subdesc": "Desenvolvido com Vue.js, Quasar Framework e Html, oferece às equipes de RH e gestores uma visão clara dos cenários organizacionais e ajuda a otimizar a estrutura da empresa de forma eficiente."
+    }
+  ],
+
+  "experience": {
+    "title": "Minha Experiência Profissional",
+    "experiences": [
+      {
+        "id": 1,
+        "name": "Instituto SENAI de Inovação e Tecnologia - RS",
+        "pos": "Estagiário em Desenvolvimento de Software",
+        "duration": "2023 - 2025",
+        "description": "Atuei principalmente no desenvolvimento front-end utilizando React, Vue e Quasar, além de aplicações mobile multiplataforma com Flutter (Dart). Liderei diversos projetos de forma independente, desde o planejamento até a implantação. Colaborei diretamente com clientes e stakeholders, realizando levantamento de requisitos e entregando soluções personalizadas. Adaptei-me rapidamente a diferentes tecnologias conforme as necessidades de cada projeto, garantindo flexibilidade na escolha das ferramentas e frameworks. Adquiri sólida experiência em integração de APIs, controle de versão, design UI/UX e metodologias ágeis."
+      },
+      {
+        "id": 2,
+        "name": "Acrilys",
+        "pos": "Auxiliar de Manutenção",
+        "duration": "2021 - 2023",
+        "description": "Realizei tarefas gerais de manutenção predial. Apesar de não estar relacionado diretamente ao desenvolvimento de software, este cargo fortaleceu minhas habilidades de resolução de problemas, atenção aos detalhes e disciplina — competências essenciais na minha atuação atual como desenvolvedor."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Vamos conversar",
+    "description": "Se você quer criar um novo site, melhorar sua plataforma existente ou trazer um projeto único à vida, estou aqui para ajudar.",
+    "nameLabel": "Nome Completo",
+    "namePlaceholder": "Matheus Soares",
+    "emailLabel": "Email",
+    "emailPlaceholder": "matheussoaressdev@gmail.com",
+    "messageLabel": "Sua Mensagem",
+    "messagePlaceholder": "Olá, quero te oferecer um trabalho...",
+    "sendButton": "Enviar Mensagem",
+    "sendingButton": "Enviando...",
+    "success": "Sua mensagem foi enviada com sucesso!",
+    "error": "Algo deu errado. Por favor, tente novamente."
+  },
+
+  "footer": {
+    "terms": "Termos & Condições",
+    "privacy": "Política de Privacidade",
+    "rights": "Todos os direitos reservados"
+  }
+}

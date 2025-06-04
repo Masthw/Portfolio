@@ -11,8 +11,11 @@ import Cube from "../components/Cube";
 import Rings from "../components/Rings";
 import HeroCamera from "../components/HeroCamera";
 import Button from "../components/Button";
+import { useTranslation } from "react-i18next";
+
 
 const Hero = () => {
+   const { t } = useTranslation();
   const isSmall = useMediaQuery({ query: "(max-width: 440px)" });
   const isMobile = useMediaQuery({ query: "(min-width: 441px) and (max-width: 768px)" });
   const isTablet = useMediaQuery({
@@ -24,9 +27,9 @@ const Hero = () => {
     <section className="min-h-screen w-full flex flex-col relative" id="home">
       <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
-          Hello, I'm Matheus <span className="waving-hand">👋</span>
+          {t("hero.greeting")} <span className="waving-hand">👋</span>
         </p>
-        <p className="hero-tag text-gray-gradient">Software Developer</p>
+        <p className="hero-tag text-gray-gradient">{t("hero.role")}</p>
       </div>
       <div className="w-full h-full absolute inset-0 ">
         <Canvas className="w-full h-full ">
@@ -53,7 +56,7 @@ const Hero = () => {
 
       <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
         <a href="#about" className="w-fit">
-          <Button name="Let's work togheter" isBeam containerClass="sm:w-fit w-full sm:min-w-96"/>
+          <Button name={t("hero.button")} isBeam containerClass="sm:w-fit w-full sm:min-w-96"/>
         </a>
       </div>
     </section>

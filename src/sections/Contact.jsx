@@ -1,8 +1,10 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Toast from "../components/Toast";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const formRef = useRef();
 
   const [showToast, setShowToast] = useState(false);
@@ -38,7 +40,7 @@ const Contact = () => {
       );
       setLoading(false);
       setToastType("success");
-      setToastMessage("Your message has been sent successfully!");
+      setToastMessage(t("contact.success"));
       setShowToast(true);
       setTimeout(() => {
         setShowToast(false);
@@ -49,7 +51,7 @@ const Contact = () => {
       setLoading(false);
       console.log(error);
       setToastType("error");
-      setToastMessage("Something went wrong. Please try again.");
+      setToastMessage(t("contact.error"));
       setShowToast(true);
       setTimeout(() => {
         setShowToast(false);
@@ -66,10 +68,9 @@ const Contact = () => {
           className="absolute inset-0 min-h-screen"
         />
         <div className="contact-container">
-          <h3 className="head-text text-gray-gradient">Let's talk</h3>
+          <h3 className="head-text text-gray-gradient">{t("contact.title")}</h3>
           <p className="text-lg text-white-600">
-            Whether you're looking to build a new website, improve your existing
-            platform, or bring a unique project to life, I'm here to help.
+          {t("contact.description")}
           </p>
           <form
             ref={formRef}
@@ -77,7 +78,7 @@ const Contact = () => {
             className="mt-12 flex flex-col space-y-7"
           >
             <label className="space-y-3 shadow-black-200">
-              <span className="field-label">Full Name</span>
+              <span className="field-label">{t("contact.nameLabel")}</span>
               <input
                 type="text"
                 name="name"
@@ -89,7 +90,7 @@ const Contact = () => {
               />
             </label>
             <label className="space-y-3 shadow-black-200">
-              <span className="field-label">Email</span>
+              <span className="field-label">{t("contact.emailLabel")}</span>
               <input
                 type="email"
                 name="email"
@@ -101,7 +102,7 @@ const Contact = () => {
               />
             </label>
             <label className="space-y-3 shadow-black-200">
-              <span className="field-label">Your Message</span>
+              <span className="field-label">{t("contact.messageLabel")}</span>
               <textarea
                 name="message"
                 value={form.message}
@@ -109,11 +110,11 @@ const Contact = () => {
                 required
                 rows={5}
                 className="field-input"
-                placeholder="Hi, I wanna give you a job..."
+                placeholder={t("contact.messagePlaceholder")}
               />
             </label>
             <button className="field-btn" type="submit" disabled={loading}>
-              {loading ? "Sending..." : "Send Message"}
+              {loading ? t("contact.sendingButton") : t("contact.sendButton")}
               <img
                 src="/assets/arrow-up.png"
                 alt="arrow-up"
