@@ -1,11 +1,9 @@
 import { useState } from "react";
 import { navLinks } from "../constants/index.js";
-import { useTranslation } from 'react-i18next';
-
-
+import { useTranslation } from "react-i18next";
 
 const NavItems = ({ onClick }) => {
-   const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <ul className="nav-ul">
       {navLinks.map(({ id, href, name }) => (
@@ -22,51 +20,53 @@ const NavItems = ({ onClick }) => {
     </ul>
   );
 };
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { i18n } = useTranslation();
 
   const toggleMenu = () => {
-    setIsOpen((prevIsOpen) => !prevIsOpen);
+    setIsOpen((prev) => !prev);
   };
 
   const closeMenu = () => {
     setIsOpen(false);
   };
 
-   const handleChangeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
+  const handleToggleLanguage = () => {
+    const newLang = i18n.language === "pt" ? "en" : "pt";
+    i18n.changeLanguage(newLang);
   };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/90">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
-          <a
+          <div className="flex items-center gap-4">
+            <a
             href="/"
             className="text-neutral-400 font-bold text-xl hover:text-white transition-colors"
           >
             Matheus
           </a>
-           <div className="flex items-center gap-3">
-            <button
-              onClick={() => handleChangeLanguage("pt")}
-              className={`hover:text-white ${
-                i18n.language === "pt" ? "text-white" : "text-neutral-400"
-              }`}
+            <div
+              onClick={handleToggleLanguage}
+              className="w-14 h-7 flex items-center rounded-full p-1 cursor-pointer bg-neutral-700
+                 transition-colors duration-300"
             >
-              🇧🇷
-            </button>
-            <button
-              onClick={() => handleChangeLanguage("en")}
-              className={`hover:text-white ${
-                i18n.language === "en" ? "text-white" : "text-neutral-400"
-              }`}
-            >
-              🇺🇸
-            </button>
+              <div
+                className={`bg-white w-5 h-5 rounded-full shadow-md transform
+                ${
+                  i18n.language === "pt" ? "translate-x-0" : "translate-x-7"
+                } transition-transform duration-300 flex items-center justify-center text-[10px] font-bold`}
+              >
+                {i18n.language === "pt" ? "PT" : "EN"}
+              </div>
+            </div>
+          </div>
 
-             <button
+          <div className="flex items-center gap-3">
+            <button
               onClick={toggleMenu}
               className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
               aria-label="Toggle menu"
@@ -84,6 +84,7 @@ const NavBar = () => {
           </nav>
         </div>
       </div>
+
       <div className={`nav-sidebar ${isOpen ? "max-h-screen" : "max-h-0"}`}>
         <nav className="p-5">
           <NavItems onClick={closeMenu} />
