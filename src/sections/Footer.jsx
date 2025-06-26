@@ -41,7 +41,7 @@ const Footer = () => {
           className="social-icon cursor-pointer"
           onClick={() =>
             handleRedirect(
-              "https://www.linkedin.com/in/matheus-dos-santos-soares-512bb8214/"
+              "https://www.linkedin.com/in/matheussoaresdev/"
             )
           }
         >
