@@ -39,14 +39,19 @@
       "subdesc": "Developed with React, TypeScript, Vite, and CSS, this portfolio is optimized for fast performance, responsiveness, and smooth user experience."
     },
     {
-      "title": "3D D20 Dice Roller",
-      "desc": "An interactive 3D D20 dice roller built with Three.js. It features realistic physics-based rolling, with special highlights for critical success (20) and critical failure (1).",
-      "subdesc": "Developed using pure HTML, CSS, and Three.js, this project simulates a fully 3D dice roll, allowing users to roll the dice and visually see the result with dynamic lighting and animations."
+      "title": "Velvet Pour",
+      "desc": "A visually rich cocktail landing page blending modern animations, scroll-driven effects, and elegant design to showcase classic mojito-inspired drinks.",
+      "subdesc": "Built with React, Tailwind CSS, and GSAP, this project features smooth scrolling, dynamic parallax effects, and video integration — creating an immersive browsing experience that feels as refreshing as the cocktails it presents."
     },
     {
       "title": "OrgChart Planner - Organizational Design Tool",
       "desc": "A powerful tool to design, manage, and forecast organizational structures. It allows companies to simulate team changes, new hires, department restructuring, and role shifts with an intuitive drag-and-drop interface.",
       "subdesc": "Built with Vue.js, Quasar Framework and Html, this platform empowers HR teams and managers to visualize organizational scenarios, plan workforce changes, and optimize company structures efficiently."
+    },
+    {
+      "title": "3D D20 Dice Roller",
+      "desc": "An interactive 3D D20 dice roller built with Three.js. It features realistic physics-based rolling, with special highlights for critical success (20) and critical failure (1).",
+      "subdesc": "Developed using pure HTML, CSS, and Three.js, this project simulates a fully 3D dice roll, allowing users to roll the dice and visually see the result with dynamic lighting and animations."
     }
   ],
 

@@ -107,14 +107,14 @@ export const myProjects = [
   },
   {
     id: 3,
-    key: "dice",
-    title: "3D D20 Dice Roller",
-    desc: "An interactive 3D D20 dice roller built with Three.js. It features realistic physics-based rolling, with special highlights for critical success (20) and critical failure (1).",
+    key: "cocktail",
+    title: "Velvet Pour",
+    desc: "A visually rich cocktail landing page blending modern animations, scroll-driven effects, and elegant design to showcase classic mojito-inspired drinks.",
     subdesc:
-      "Developed using pure HTML, CSS, and Three.js, this project simulates a fully 3D dice roll, allowing users to roll the dice and visually see the result with dynamic lighting and animations.",
-    href: "https://masthw.github.io/d20-Dice-Three.js/",
-    texture: "/textures/project/projectdice.mp4",
-    logo: "/assets/dice.png",
+      "Built with React, Tailwind CSS, and GSAP, this project features smooth scrolling, dynamic parallax effects, and video integration — creating an immersive browsing experience that feels as refreshing as the cocktails it presents.",
+    href: "https://gsap-cocktails-roan.vercel.app/",
+    texture: "/textures/project/projectcocktail.mp4",
+    logo: "/assets/cocktail.png",
     logoStyle: {
       backgroundColor: "#13202F",
       border: "0.2px solid #17293E",
@@ -124,18 +124,23 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "HTML",
-        path: "/assets/html.svg",
+        name: "React",
+        path: "/assets/react.svg",
       },
       {
         id: 2,
-        name: "Github",
-        path: "assets/github.svg",
+        name: "Gsap",
+        path: "assets/gsap.svg",
       },
       {
         id: 3,
-        name: "Three.js",
-        path: "/assets/Three.js.svg",
+        name: "Tailwind",
+        path: "/assets/tailwindcss.png",
+      },
+      {
+        id: 4,
+        name: "Vercel",
+        path: "/assets/vercel.svg",
       },
     ],
   },
@@ -177,6 +182,40 @@ export const myProjects = [
         id: 4,
         name: "HTML",
         path: "/assets/html.svg",
+      },
+    ],
+  },
+  {
+    id: 5,
+    key: "dice",
+    title: "3D D20 Dice Roller",
+    desc: "An interactive 3D D20 dice roller built with Three.js. It features realistic physics-based rolling, with special highlights for critical success (20) and critical failure (1).",
+    subdesc:
+      "Developed using pure HTML, CSS, and Three.js, this project simulates a fully 3D dice roll, allowing users to roll the dice and visually see the result with dynamic lighting and animations.",
+    href: "https://masthw.github.io/d20-Dice-Three.js/",
+    texture: "/textures/project/projectdice.mp4",
+    logo: "/assets/dice.png",
+    logoStyle: {
+      backgroundColor: "#13202F",
+      border: "0.2px solid #17293E",
+      boxShadow: "0px 0px 60px 0px #2F6DB54D",
+    },
+    spotlight: "/assets/spotlight2.png",
+    tags: [
+      {
+        id: 1,
+        name: "HTML",
+        path: "/assets/html.svg",
+      },
+      {
+        id: 2,
+        name: "Github",
+        path: "assets/github.svg",
+      },
+      {
+        id: 3,
+        name: "Three.js",
+        path: "/assets/Three.js.svg",
       },
     ],
   },

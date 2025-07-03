@@ -39,14 +39,19 @@
       "subdesc": "Criado com React, TypeScript, Vite e CSS. Otimizado para alta performance, responsividade e navegação fluida."
     },
     {
-      "title": "Rolador de Dado 3D D20",
-      "desc": "Um rolador de dado D20 em 3D com rolagem realista e destaques para sucesso crítico (20) e falha crítica (1).",
-      "subdesc": "Desenvolvido com HTML, CSS e Three.js. Simula uma rolagem realista, com iluminação dinâmica e animações imersivas."
+      "title": "Velvet Pour",
+      "desc": "Uma landing page de coquetéis visualmente sofisticada, que combina animações modernas, efeitos acionados por rolagem e um design elegante para destacar drinques clássicos inspirados em mojito.",
+      "subdesc": "Desenvolvido com React, Tailwind CSS e GSAP, este projeto conta com rolagem suave, efeitos dinâmicos de parallax e integração de vídeo — criando uma experiência de navegação imersiva e tão refrescante quanto os próprios coquetéis apresentados."
     },
     {
       "title": "OrgChart Planner - Ferramenta de Design Organizacional",
       "desc": "Ferramenta para planejar, gerir e simular estruturas organizacionais de empresas, com interface de arrastar e soltar.",
       "subdesc": "Desenvolvido com Vue.js, Quasar Framework e Html, oferece às equipes de RH e gestores uma visão clara dos cenários organizacionais e ajuda a otimizar a estrutura da empresa de forma eficiente."
+    },
+    {
+      "title": "Rolador de Dado 3D D20",
+      "desc": "Um rolador de dado D20 em 3D com rolagem realista e destaques para sucesso crítico (20) e falha crítica (1).",
+      "subdesc": "Desenvolvido com HTML, CSS e Three.js. Simula uma rolagem realista, com iluminação dinâmica e animações imersivas."
     }
   ],
 
