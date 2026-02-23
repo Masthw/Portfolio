@@ -33,7 +33,7 @@ const Experience = () => {
                       <div className="work-content-logo">
                         <img
                           src={
-                            id === 1
+                            id === 1 || id === 2
                               ? "/assets/senai.jpeg"
                               : "/assets/acrilys_logo.jpeg"
                           }
