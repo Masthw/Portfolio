@@ -60,13 +60,20 @@
     "experiences": [
       {
         "id": 1,
-        "name": "SENAI-RS Institute of Technology and Innovation",
-        "pos": "Software Development Intern",
-        "duration": "2023 - 2025",
-        "description": "Worked primarily on front-end development using React, Vue, and Quasar, as well as cross-platform mobile applications with Flutter (Dart). Led several projects independently, from planning to deployment. Collaborated directly with clients and stakeholders, gathering requirements and delivering tailored solutions. Adapted quickly to different technologies depending on each project’s needs, ensuring flexibility in choosing the right tools and frameworks. Gained solid experience in API integration, version control, UI/UX design, and agile workflows."
+        "name": "SENAI Institute for Innovation and Technology - RS",
+        "pos": "Technical Services and Technology Specialist",
+        "duration": "2025 - Present",
+        "description": "Currently leading technical projects, expanding beyond front-end (React/Vue) and mobile (Flutter) development. I manage infrastructure using Docker containerization and server configuration. Responsible for gathering and drafting technical requirements with stakeholders, defining system architecture and optimal tech stacks. Focused on delivering robust applications, integrating complex APIs, and ensuring scalability through DevOps best practices and agile methodologies."
       },
       {
         "id": 2,
+        "name": "SENAI Institute for Innovation and Technology - RS",
+        "pos": "Software Development Intern",
+        "duration": "2023 - 2025",
+        "description": "Started my career focused on building modern, responsive interfaces using React and Quasar. Contributed to the mobile application lifecycle with Flutter, participating from initial planning to deployment. Developed core skills in UI/UX design, version control, and service integration, quickly adapting to the technological demands of the Institute's innovation projects."
+      },
+      {
+        "id": 3,
         "name": "Acrilys",
         "pos": "Maintenance Assistant",
         "duration": "2021 - 2023",
@@ -88,7 +95,7 @@
     "success": "Your message has been sent successfully!",
     "error": "Something went wrong. Please try again."
   },
-   "footer": {
+  "footer": {
     "terms": "Term & Conditions",
     "privacy": "Privacy Policy",
     "rights": "All rights reserved"

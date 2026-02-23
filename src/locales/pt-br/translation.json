@@ -61,12 +61,19 @@
       {
         "id": 1,
         "name": "Instituto SENAI de Inovação e Tecnologia - RS",
-        "pos": "Estagiário em Desenvolvimento de Software",
-        "duration": "2023 - 2025",
-        "description": "Atuei principalmente no desenvolvimento front-end utilizando React, Vue e Quasar, além de aplicações mobile multiplataforma com Flutter (Dart). Liderei diversos projetos de forma independente, desde o planejamento até a implantação. Colaborei diretamente com clientes e stakeholders, realizando levantamento de requisitos e entregando soluções personalizadas. Adaptei-me rapidamente a diferentes tecnologias conforme as necessidades de cada projeto, garantindo flexibilidade na escolha das ferramentas e frameworks. Adquiri sólida experiência em integração de APIs, controle de versão, design UI/UX e metodologias ágeis."
+        "pos": "Técnico de Serviços Técnicos e Tecnológicos",
+        "duration": "2025 - Presente",
+        "description": "Atuo na liderança técnica de projetos, indo além do desenvolvimento front-end (React/Vue) e mobile (Flutter). Minha atuação expandiu para a infraestrutura, gerenciando ambientes conteinerizados com Docker e configuração de servidores. Sou responsável pela elaboração técnica de requisitos junto a stakeholders, definindo a arquitetura e as ferramentas ideais para cada solução. Foco na entrega de aplicações robustas, integrando APIs complexas e garantindo a escalabilidade através de boas práticas de DevOps e metodologias ágeis."
       },
       {
         "id": 2,
+        "name": "Instituto SENAI de Inovação e Tecnologia - RS",
+        "pos": "Estagiário em Desenvolvimento de Software",
+        "duration": "2023 - 2025",
+        "description": "Iniciei minha trajetória focada no desenvolvimento de interfaces modernas e responsivas utilizando React e Quasar. Colaborei no ciclo de vida de aplicações mobile com Flutter, participando desde o planejamento inicial até a implantação. Desenvolvi competências fundamentais em design UI/UX, controle de versão e integração de serviços, adaptando-me rapidamente às demandas tecnológicas dos projetos de inovação do Instituto."
+      },
+      {
+        "id": 3,
         "name": "Acrilys",
         "pos": "Auxiliar de Manutenção",
         "duration": "2021 - 2023",
